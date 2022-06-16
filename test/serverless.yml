@@ -1,0 +1,15 @@
+service: my-test-service
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  environment:
+    BUS_ARN: ${awsdesc:EventBridge.describeEventBus.Name.default.Arn}
+    # TABLE_ARN: ${awsdesc:DynamoDB.describeTable.TableName.${self:provider.environment.ENTITY_TABLE_NAME}.Table.TableArn}
+    
+plugins:
+  - serverless-aws-describe-plugin
+
+functions:
+  listener:
+    handler: index.handle

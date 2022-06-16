@@ -1,0 +1,11 @@
+{
+  "name": "test-service",
+  "scripts": {
+    "test": "sls package --verbose -r us-west-2 -s stg"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-aws-describe-plugin": "^1.0.0",
+    "serverless": "^3.0.0"
+  }
+}
