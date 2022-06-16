@@ -1,0 +1,29 @@
+{
+  "name": "serverless-aws-describe-plugin",
+  "version": "1.0.0",
+  "description": "Serverless custom variable source plugin to describe AWS resources.",
+  "author": "John Gilbert",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgilbert01/serverless-aws-describe-plugin.git"
+  },
+  "keywords": [
+    "serverless",
+    "serverless plugin",
+    "aws",
+    "amazon web services",
+    "serverless.com"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix index.js",
+    "test": "npm run lint"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
